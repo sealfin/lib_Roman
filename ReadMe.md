@@ -34,6 +34,6 @@ Note that although converting an integer into its equivalent Roman numeral strin
 [^1]: Roman numerals
 	Retrieved on the 6<sup>th</sup> of February, 2023, from
 	Wikipedia
-	<`[http://en.Wikipedia.org/wiki/Roman_numerals](http://en.Wikipedia.org/wiki/Roman_numerals)`>
+	<[`http://en.Wikipedia.org/wiki/Roman_numerals`](http://en.Wikipedia.org/wiki/Roman_numerals)>
 
 \- an oversight - that I may or may not correct in a future version of this library - means that a Roman numeral string need not be in "standard form" to be converted into its equivalent integer; eg., a number in "standard form" should contain a maximum of one instance of the character `'D'`, but this library will convert the Roman numeral string `"DDCMLXXXIII"` into its equivalent integer `1983` without error.
