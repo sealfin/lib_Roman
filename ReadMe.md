@@ -1,6 +1,6 @@
 This C library for converting Roman numeral strings to integers, and vice versa, was developed for [my solution](http://AModernPrometheus.WordPress.com/2023/02/27/329-roman-arithmetic/) to the "[Roman Arithmetic](http://www.CodeAbbey.com/index/task_view/roman-arithmetic)" (#329) problem posed by [CodeAbbey](http://www.CodeAbbey.com/).
 
-(This library is based, to a limited degree, on [the Pascal library of (almost) the same name](http://GitHub.com/sealfin/Pascal/blob/master/lib_seal_Roman.pas) I developed (at the time of writing) ten years ago (or thereabouts) Ð but only "_to a limited degree_", as I had difficulty understanding how that earlier library functioned when I tried to re-read its source code when developing this libraryÉ)
+(This library is based, to a limited degree, on [the Pascal library of (almost) the same name](http://GitHub.com/sealfin/Pascal/blob/master/lib_seal_Roman.pas) I developed (at the time of writing) ten years ago (or thereabouts) - but only "_to a limited degree_", as I had difficulty understanding how that earlier library functioned when I tried to re-read its source code when developing this library...)
 
 This library is known to function correctly using:
 
@@ -25,15 +25,15 @@ And the following source code snippet demonstrates converting an integer (`1983`
 	  free( Rn.m_RomanNumerals );
 	}
 
-Note that although converting an integer into its equivalent Roman numeral string will always result in a number in "standard form" Ð
+Note that although converting an integer into its equivalent Roman numeral string will always result in a number in "standard form" -
 
 > "The numerals for 4 (IV) and 9 (IX) are written using "subtraction notation",<sup>[5]</sup> where the first symbol (I) is _subtracted_ from the larger one (V, or X), thus avoiding the clumsier IIII and VIIII.<sup>[k]</sup>
 > Subtraction notation is also used for 40 (XL), 90 (XC), 400 (CD) and 900 (CM).<sup>[6]</sup>
-> These are the only subtractive forms in standard use."[^\*]
+> These are the only subtractive forms in standard use."[^1]
 
-[^\*]: Roman numerals
-  Retrieved on the 6<sup>th</sup> of February, 2023, from
-  Wikipedia
-  <`[http://en.Wikipedia.org/wiki/Roman_numerals](http://en.Wikipedia.org/wiki/Roman_numerals)`>
+[^1]: Roman numerals
+	Retrieved on the 6<sup>th</sup> of February, 2023, from
+	Wikipedia
+	<`[http://en.Wikipedia.org/wiki/Roman_numerals](http://en.Wikipedia.org/wiki/Roman_numerals)`>
 
-\Ð an oversight Ð that I may or may not correct in a future version of this library Ð means that a Roman numeral string need not be in "standard form" to be converted into its equivalent integer; eg., a number in "standard form" should contain a maximum of one instance of the character `'D'`, but this library will convert the Roman numeral string `"DDCMLXXXIII"` into its equivalent integer `1983` without error.
+\- an oversight - that I may or may not correct in a future version of this library - means that a Roman numeral string need not be in "standard form" to be converted into its equivalent integer; eg., a number in "standard form" should contain a maximum of one instance of the character `'D'`, but this library will convert the Roman numeral string `"DDCMLXXXIII"` into its equivalent integer `1983` without error.
